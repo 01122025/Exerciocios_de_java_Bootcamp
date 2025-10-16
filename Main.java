@@ -1,26 +1,42 @@
-import java.util.Scanner;
-
-// sistema de verificador de números impares.
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        Scanner inputDeEntrada = new Scanner(System.in);
-        System.out.print("Digite um numero: ");
-        int resultado =  inputDeEntrada.nextInt();
+    // Declaramos os parametros do cliente e puxamos o contrutor novaConta.
+       Clientes ID001 = new Clientes();
+       ID001.primeiroNome = "Pedro Henrique Alves dos Santos";
+       ID001.Idade = 26;
+       ID001.cpf = "123.456.789-00";
+       ID001.novaConta();
 
-        if (resultado % 2 == 1 && resultado >2 && resultado < 5 ) {
-                System.out.println("Esse Valor é impar de categoria A está entre 2 e 5");
-        }
-        else if (resultado < 6 && resultado < 20 ) {
-                System.out.println("Esse valor é impar de categoria B e está entre 6 e 20");
-            }
-        else if ( resultado > 20){
-                System.out.println("Esse valor é impar de categoria C e está acima de 20");
-            }
-        else {
-                System.out.printf( resultado + " é par");
-        }
 
-        }
+        //Declaramos Variáveis publicas;
+       Car2 car2 = new Car2();
+       car2.marca = "GM";
+       car2.modelo= "Corsa frente Montana";
+       car2.ano = 2005;
+       car2.valorCarro = 125_000;
+       car2.mesesFinanciamento = 60;
 
+       car2.acrescimoPorcentagem();
+       car2.financiamento();
+
+
+       // declaramos novos valores a variaveis privadas.
+       Car car = new Car("Voksvagem","Fox",2020, 125_000, 72);
+        System.out.println("\n"+car.getMarca());
+        System.out.println(car.getModelo());
+        System.out.println(car.getano());
+        System.out.println(car.getValorCarro());
+        System.out.println(car.getMesesFinanciamento());
+
+        //Aqui alteramos o valores da mensalidade e valor do veiculo no  car
+        car.setValorCarro2(137_500);
+        car.setMesesFinanciamento2(72);
+
+        // aqui declarmos a construtor acrescimo e finaciamento.
+        car.acrescimoPorcentagem2();
+        car.financiamento2();
     }
+}
