@@ -2,10 +2,14 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-       /*Clientes ID001 = new Clientes();
+
+    // Declaramos os parametros do cliente e puxamos o contrutor novaConta.
+       Clientes ID001 = new Clientes();
        ID001.primeiroNome = "Pedro Henrique Alves dos Santos";
        ID001.Idade = 26;
-       ID001.cpf = "123.456.789-00";*/
+       ID001.cpf = "123.456.789-00";
+       ID001.novaConta();
+
 
         //Declaramos Variáveis publicas;
        Car2 car2 = new Car2();
